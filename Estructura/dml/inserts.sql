@@ -1,0 +1,286 @@
+-- ============================================================
+
+-- SCRIPT DE INSERCIÓN DE DATOS
+USE gaseosas_del_valle;
+
+-- ============================================================
+
+-- 1. TABLA: productos
+INSERT INTO productos (nombre, categoria, precio, volumen_ml, stock_actual, stock_minimo) 
+VALUES ('Cola Clásica', 'Gaseosa', 3.50, 500, 220, 40),
+    ('Cola Zero', 'Gaseosa', 3.75, 500, 180, 35),
+    ('Naranja Burbujeante', 'Gaseosa', 3.25, 500, 200, 40),
+    ('Naranja Light', 'Gaseosa', 3.25, 500, 150, 30),
+    ('Limón Fresco', 'Gaseosa', 3.00, 500, 170, 30),
+    ('Limón Zero', 'Gaseosa', 3.00, 500, 140, 25),
+    ('Uva Andina', 'Gaseosa', 3.50, 500, 160, 30),
+    ('Manzana Dorada', 'Gaseosa', 3.50, 500, 130, 25),
+    ('Soda Blanca', 'Soda', 2.75, 500, 260, 50),
+    ('Soda Tropical', 'Soda', 3.00, 500, 210, 45),
+    ('Agua Mineral', 'Agua', 2.25, 500, 300, 60),
+    ('Agua con Gas', 'Agua', 2.50, 500, 280, 55),
+    ('Agua Sabor Limón', 'Agua saborizada', 2.75, 500, 250, 50),
+    ('Gaseosa Fiesta', 'Gaseosa', 4.50, 1000, 200, 40),
+    ('Gaseosa Familiar', 'Gaseosa', 5.50, 1500, 150, 30),
+    ('Gaseosa Mega', 'Gaseosa', 7.00, 2000, 100, 20),
+    ('Cola Familiar', 'Gaseosa', 5.00, 1000, 180, 35),
+    ('Cola Súper', 'Gaseosa', 6.00, 1500, 130, 25),
+    ('Cola Gigante', 'Gaseosa', 8.00, 2000, 80, 15),
+    ('Naranja Familiar', 'Gaseosa', 4.75, 1000, 160, 30),
+    ('Naranja Súper', 'Gaseosa', 5.75, 1500, 110, 20),
+    ('Limón Familiar', 'Gaseosa', 4.50, 1000, 140, 30),
+    ('Uva Familiar', 'Gaseosa', 4.75, 1000, 120, 25),
+    ('Manzana Familiar', 'Gaseosa', 4.75, 1000, 110, 25),
+    ('Soda Familiar', 'Soda', 4.25, 1000, 210, 40),
+    ('Valle Azul', 'Gaseosa', 2.50, 330, 240, 50),
+    ('Valle Roja', 'Gaseosa', 2.50, 330, 220, 50),
+    ('Valle Verde', 'Gaseosa', 2.50, 330, 230, 50),
+    ('Kombucha Gasificada', 'Bebida fermentada', 5.50, 330, 80, 15),
+    ('Agua con Gas', 'Agua saborizada', 3.00, 600, 30, 10),
+    ('Agua Sabor Limón', 'Agua saborizada', 3.25, 600, 240, 50),
+    ('Gaseosa Fiesta', 'Gaseosa', 4.75, 1000, 190, 35),
+    ('Gaseosa Familiar', 'Gaseosa', 5.75, 1500, 120, 25),
+    ('Gaseosa Mega', 'Gaseosa', 7.50, 2000, 90, 20),
+    ('Cola Familiar', 'Gaseosa', 5.25, 1000, 170, 30),
+    ('Cola Súper', 'Gaseosa', 6.25, 1500, 110, 25),
+    ('Cola Gigante', 'Gaseosa', 8.25, 2000, 70, 15),
+    ('Naranja Familiar', 'Gaseosa', 5.00, 1000, 150, 30),
+    ('Naranja Súper', 'Gaseosa', 6.00, 1500, 100, 20),
+    ('Limón Familiar', 'Gaseosa', 4.75, 1000, 140, 30),
+    ('Uva Familiar', 'Gaseosa', 5.00, 1000, 120, 25),
+    ('Manzana Familiar', 'Gaseosa', 5.00, 1000, 110, 25),
+    ('Soda Familiar', 'Soda', 4.50, 1000, 220, 40),
+    ('Valle Azul', 'Gaseosa', 2.75, 330, 250, 50),
+    ('Valle Roja', 'Gaseosa', 2.75, 330, 230, 50),
+    ('Valle Verde', 'Gaseosa', 2.75, 330, 240, 50),
+    ('Kombucha Gasificada', 'Bebida fermentada', 5.50, 330, 80, 15),
+    ('Refresco de Frutas', 'Refresco', 3.75, 400, 190, 35),
+    ('Malta Burbujeante', 'Malta', 4.00, 400, 160, 30),
+    ('Té Helado', 'Té', 3.50, 400, 180, 30),
+    ('Energizante Natural', 'Energizante', 4.25, 400, 150, 25),
+    ('Agua de Coco', 'Agua saborizada', 3.50, 400, 200, 40),
+    ('Gaseosa Tropical', 'Gaseosa', 3.75, 500, 170, 30),
+    ('Gaseosa de Limón y Menta', 'Gaseosa', 4.00, 500, 160, 30),
+    ('Gaseosa de Uva y Fresa', 'Gaseosa', 4.00, 500, 150, 25),
+    ('Gaseosa de Manzana y Canela', 'Gaseosa', 4.25, 500, 140, 25),
+    ('Gaseosa de Naranja y Jengibre', 'Gaseosa', 4.25, 500, 130, 20),
+    ('Gaseosa de Limón y Jengibre', 'Gaseosa', 4.50, 500, 120, 20),
+    ('Gaseosa de Uva y Menta', 'Gaseosa', 4.50, 500, 110, 15),
+    ('Gaseosa de Manzana y Menta', 'Gaseosa', 4.75, 500, 100, 15),
+    ('Gaseosa de Naranja y Canela', 'Gaseosa', 5.00, 500, 90, 10);
+
+-- ============================================================
+
+-- 2. TABLA: clientes
+INSERT INTO clientes (nombre, identificacion, direccion, telefono, correo)
+VALUES ('Supermercado La Esquina', '900100201-1', 'Calle 10 # 5-20', '6012345001', 'contacto@laesquina.com'),
+    ('Minimarket El Valle', '900100202-2', 'Carrera 15 # 8-35', '6012345002', 'pedidos@minivalle.com'),
+    ('Tienda Doña Rosa', '900100203-3', 'Avenida 3 # 12-45', '6012345003', 'tiendarosa@correo.com'),
+    ('Almacén Central', '900100204-4', 'Calle 25 # 14-10', '6012345004', 'almacencentral@correo.com'),
+    ('Distribuciones Sol', '900100205-5', 'Carrera 7 # 3-88', '6012345005', 'sol@distri.com'),
+    ('Cafetería La Plaza', '900100206-6', 'Plaza Principal Local 4', '6012345006', 'cafeplaza@correo.com'),
+    ('Restaurante Sabor Latino', '900100207-7', 'Calle 13 # 9-27', '6012345007', 'saborlatino@correo.com'),
+    ('Panadería El Trigal', '900100208-8', 'Carrera 20 # 10-15', '6012345008', 'trigal@correo.com'),
+    ('Heladería Frío Sur', '900100209-9', 'Calle 5 # 22-60', '6012345009', 'frioursur@correo.com'),
+    ('Comidas Rápidas El Parque', '900100210-0', 'Parque Central Local 2', '6012345010', 'elparque@correo.com'),
+    ('Supermercado San Jorge', '900100211-1', 'Calle 45 # 23-11', '6012345011', 'sanjorge@correo.com'),
+    ('Minimarket Los Pinos', '900100212-2', 'Carrera 5 # 18-42', '6012345012', 'pinos@correo.com'),
+    ('Tienda El Trébol', '900100213-3', 'Calle 8 # 6-02', '6012345013', 'trebol@correo.com'),
+    ('Almacén La Cosecha', '900100214-4', 'Carrera 12 # 21-30', '6012345014', 'cosecha@correo.com'),
+    ('Distribuciones Río Azul', '900100215-5', 'Vía Alterna Km 2', '6012345015', 'rioazul@correo.com'),
+    ('Cafetería Aroma', '900100216-6', 'Calle 30 # 11-25', '6012345016', 'aroma@correo.com'),
+    ('Restaurante La Huerta', '900100217-7', 'Carrera 9 # 14-52', '6012345017', 'huerta@correo.com'),
+    ('Panadería Dulce Vida', '900100218-8', 'Calle 17 # 4-19', '6012345018', 'dulcevida@correo.com'),
+    ('Heladería Nieve Norte', '900100219-9', 'Carrera 30 # 5-70', '6012345019', 'nievenorte@correo.com'),
+    ('Comidas Rápidas La 10', '900100220-0', 'Calle 10 # 15-34', '6012345020', 'la10@correo.com'),
+    ('Supermercado Monteverde', '900100221-1', 'Carrera 1 # 33-09', '6012345021', 'monteverde@correo.com'),
+    ('Minimarket Amanecer', '900100222-2', 'Calle 3 # 28-41', '6012345022', 'amanecer@correo.com'),
+    ('Tienda La Amistad', '900100223-3', 'Carrera 25 # 7-18', '6012345023', 'amistad@correo.com'),
+    ('Almacén El Progreso', '900100224-4', 'Calle 50 # 30-12', '6012345024', 'progreso@correo.com'),
+    ('Distribuciones Luna', '900100225-5', 'Carrera 18 # 2-55', '6012345025', 'luna@distri.com'),
+    ('Cafetería Grano de Oro', '900100226-6', 'Calle 22 # 13-08', '6012345026', 'granodeoro@correo.com'),
+    ('Restaurante El Fogón', '900100227-7', 'Carrera 11 # 19-23', '6012345027', 'fogon@correo.com'),
+    ('Panadería San Martín', '900100228-8', 'Calle 9 # 16-47', '6012345028', 'sanmartin@correo.com'),
+    ('Heladería Dulce Frío', '900100229-9', 'Carrera 4 # 24-36', '6012345029', 'dulcefrio@correo.com'),
+    ('Comidas Rápidas Express', '900100230-0', 'Terminal Local 7', '6012345030', 'express@correo.com');
+
+-- ============================================================
+
+-- 3. TABLA: sedes
+INSERT INTO sedes (nombre, ubicacion, capacidad, encargado) 
+VALUES ('Sede Principal Centro', 'Centro', 320, 'Laura Gómez'),
+    ('Sede Norte', 'Norte', 260, 'Carlos Pérez'),
+    ('Sede Sur', 'Sur', 240, 'Ana Torres'),
+    ('Bodega Central', 'Centro', 380, 'Miguel Ángel López'),
+    ('Punto Comercial Rivera', 'Barrio Rivera', 120, 'Sofía Castro'),
+    ('Punto Comercial Jardín', 'Barrio Jardín', 110, 'Andrés Molina'),
+    ('Sede Comercial Oeste', 'Oeste', 190, 'Iván Guzmán'),
+    ('Centro de Distribución Norte', 'Norte Industrial', 350, 'Elena Vargas'),
+    ('Centro de Distribución Sur', 'Sur Industrial', 340, 'Raúl Mendoza'),
+    ('Almacén La Flora', 'La Flora', 160, 'Patricia Núñez'),
+    ('Almacén Los Andes', 'Los Andes', 170, 'Óscar Cárdenas'),
+    ('Kiosco Universidad', 'Ciudad Universitaria', 100, 'Natalia Prieto'),
+    ('Kiosco Hospital', 'Zona Hospitalaria', 70, 'Fabio Arenas'),
+    ('Sede Vacacional Lago', 'Lago', 95, 'Verónica Silva'),
+    ('Punto de Entrega Rápida Norte', 'Norte', 88, 'Emilio Duarte'),
+    ('Bodega Temporada Alta', 'Parque Industrial', 300, 'Adriana Campos');
+
+-- ============================================================
+
+-- 4. TABLA: pedidos
+INSERT INTO pedidos (fecha_pedido, id_cliente, id_sede, total_sin_iva, total_con_iva)
+VALUES ('2026-01-05', 1, 1, 185.00, 220.15),
+    ('2026-01-07', 2, 2, 240.00, 285.60),
+    ('2026-01-09', 3, 5, 125.00, 148.75),
+    ('2026-01-12', 4, 1, 315.00, 374.85),
+    ('2026-01-15', 5, 4, 450.00, 535.50),
+    ('2026-01-18', 6, 6, 175.00, 208.25),
+    ('2026-01-20', 7, 3, 290.00, 345.10),
+    ('2026-01-23', 8, 7, 210.00, 249.90),
+    ('2026-01-25', 9, 10, 155.00, 184.45),
+    ('2026-01-28', 10, 12, 190.00, 226.10),
+    ('2026-02-02', 11, 1, 520.00, 618.80),
+    ('2026-02-04', 12, 2, 275.00, 327.25),
+    ('2026-02-07', 13, 5, 135.00, 160.65),
+    ('2026-02-10', 14, 4, 365.00, 434.35),
+    ('2026-02-13', 15, 8, 480.00, 571.20),
+    ('2026-02-16', 16, 6, 220.00, 261.80),
+    ('2026-02-18', 17, 3, 310.00, 368.90),
+    ('2026-02-21', 18, 7, 195.00, 232.05),
+    ('2026-02-24', 19, 10, 285.00, 339.15),
+    ('2026-02-27', 20, 12, 160.00, 190.40),
+    ('2026-03-03', 21, 1, 625.00, 743.75),
+    ('2026-03-05', 22, 2, 230.00, 273.70),
+    ('2026-03-08', 23, 5, 145.00, 172.55),
+    ('2026-03-11', 24, 4, 395.00, 470.05),
+    ('2026-03-14', 25, 8, 550.00, 654.50),
+    ('2026-03-17', 26, 6, 185.00, 220.15),
+    ('2026-03-20', 27, 3, 340.00, 404.60),
+    ('2026-03-23', 28, 7, 225.00, 267.75),
+    ('2026-03-26', 29, 10, 175.00, 208.25),
+    ('2026-03-29', 30, 12, 265.00, 315.35),
+    ('2026-04-02', 1, 1, 410.00, 487.90),
+    ('2026-04-05', 3, 2, 195.00, 232.05),
+    ('2026-04-08', 5, 4, 580.00, 690.20),
+    ('2026-04-11', 7, 8, 325.00, 386.75),
+    ('2026-04-14', 10, 6, 245.00, 291.55),
+    ('2026-04-17', 15, 3, 460.00, 547.40),
+    ('2026-04-20', 20, 7, 285.00, 339.15),
+    ('2026-04-23', 25, 10, 615.00, 731.85),
+    ('2026-04-26', 30, 12, 350.00, 416.50);
+
+-- ============================================================
+
+-- 5. TABLA: detalle_pedido
+INSERT INTO detalle_pedido 
+(id_pedido, id_producto, cantidad, subtotal)
+VALUES (1,  26, 74, 185.00),
+    (2,  27, 96, 240.00),
+    (3,  28, 50, 125.00),
+    (4,  26, 126, 315.00),
+    (5,  27, 180, 450.00),
+    (6,  28, 70, 175.00),
+    (7,  26, 116, 290.00),
+    (8,  27, 84, 210.00),
+    (9,  28, 62, 155.00),
+    (10, 26, 76, 190.00),
+    (11, 27, 208, 520.00),
+    (12, 28, 110, 275.00),
+    (13, 26, 54, 135.00),
+    (14, 27, 146, 365.00),
+    (15, 28, 192, 480.00),
+    (16, 26, 88, 220.00),
+    (17, 27, 124, 310.00),
+    (18, 28, 78, 195.00),
+    (19, 26, 114, 285.00),
+    (20, 27, 64, 160.00),
+    (21, 38, 125, 625.00),
+    (22, 28, 92, 230.00),
+    (23, 26, 58, 145.00),
+    (24, 27, 158, 395.00),
+    (25, 28, 220, 550.00),
+    (26, 26, 74, 185.00),
+    (27, 27, 136, 340.00),
+    (28, 28, 90, 225.00),
+    (29, 26, 70, 175.00),
+    (30, 27, 106, 265.00),
+    (31, 28, 164, 410.00),
+    (32, 26, 78, 195.00),
+    (33, 27, 232, 580.00),
+    (34, 28, 130, 325.00),
+    (35, 26, 98, 245.00),
+    (36, 27, 184, 460.00),
+    (37, 28, 114, 285.00),
+    (38, 34, 82, 615.00),
+    (39, 26, 140, 350.00),
+    (40, 27, 120, 300.00);
+
+-- ============================================================
+
+-- 6. TABLA: auditoria_precios
+INSERT INTO auditoria_precios (id_producto, precio_anterior, precio_nuevo, fecha_cambio)
+VALUES
+    -- ============================================================
+    -- CAMBIOS DE ENERO
+    (1,  3.50, 3.75, '2026-01-03'),
+    (2,  3.75, 4.00, '2026-01-05'),
+    (3,  3.25, 3.50, '2026-01-07'),
+    (4,  3.25, 3.50, '2026-01-09'),
+    (5,  3.00, 3.25, '2026-01-12'),
+    (6,  3.00, 3.25, '2026-01-15'),
+    (7,  3.50, 3.75, '2026-01-18'),
+    (8,  3.50, 3.75, '2026-01-20'),
+    (9,  2.75, 3.00, '2026-01-23'),
+    (10, 3.00, 3.25, '2026-01-26'),
+
+    -- ============================================================
+    -- CAMBIOS DE FEBRERO
+    (11, 2.25, 2.50, '2026-02-02'),
+    (12, 2.50, 2.75, '2026-02-04'),
+    (13, 2.75, 3.00, '2026-02-06'),
+    (14, 4.50, 4.75, '2026-02-09'),
+    (15, 5.50, 5.75, '2026-02-11'),
+    (16, 7.00, 7.50, '2026-02-13'),
+    (17, 5.00, 5.25, '2026-02-16'),
+    (18, 6.00, 6.25, '2026-02-18'),
+    (19, 8.00, 8.50, '2026-02-20'),
+    (20, 4.75, 5.00, '2026-02-23'),
+
+    -- ============================================================
+    -- CAMBIOS DE MARZO
+    (21, 5.75, 6.00, '2026-03-02'),
+    (22, 4.50, 4.75, '2026-03-04'),
+    (23, 4.75, 5.00, '2026-03-06'),
+    (24, 4.75, 5.00, '2026-03-09'),
+    (25, 4.25, 4.50, '2026-03-11'),
+    (26, 2.50, 2.75, '2026-03-13'),
+    (27, 2.50, 2.75, '2026-03-16'),
+    (28, 2.50, 2.75, '2026-03-18'),
+    (29, 5.50, 6.00, '2026-03-20'),
+    (30, 3.00, 3.25, '2026-03-23'),
+
+    -- ============================================================
+    -- CAMBIOS DE ABRIL
+    (31, 3.25, 3.50, '2026-04-02'),
+    (32, 4.75, 5.00, '2026-04-04'),
+    (33, 5.75, 6.00, '2026-04-06'),
+    (34, 7.50, 8.00, '2026-04-08'),
+    (35, 5.25, 5.50, '2026-04-10'),
+    (36, 6.25, 6.50, '2026-04-13'),
+    (37, 8.25, 8.50, '2026-04-15'),
+    (38, 5.00, 5.25, '2026-04-17'),
+    (39, 6.00, 6.25, '2026-04-20'),
+    (40, 4.75, 5.00, '2026-04-22'),
+
+    -- ============================================================
+    -- CAMBIOS DE MAYO
+    (41, 5.00, 5.25, '2026-05-02'),
+    (42, 4.50, 4.75, '2026-05-05'),
+    (43, 2.75, 3.00, '2026-05-08'),
+    (44, 2.75, 3.00, '2026-05-11'),
+    (45, 2.75, 3.00, '2026-05-14'),
+    (46, 5.50, 5.75, '2026-05-17'),
+    (47, 3.75, 4.00, '2026-05-20'),
+    (48, 4.00, 4.25, '2026-05-23'),
+    (49, 3.50, 3.75, '2026-05-26'),
+    (50, 4.25, 4.50, '2026-05-29');
