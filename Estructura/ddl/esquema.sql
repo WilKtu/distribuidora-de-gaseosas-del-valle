@@ -36,3 +36,15 @@ CREATE TABLE productos(
     stock_actual INT NOT NULL,
     stock_minimo INT NOT NULL
 );
+
+-- ============================================================
+
+-- Tabla: clientes
+CREATE TABLE clientes(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    identificacion VARCHAR(20) NOT NULL,
+    direccion VARCHAR(100) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    correo VARCHAR(100)
+);
