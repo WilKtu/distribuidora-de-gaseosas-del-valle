@@ -93,3 +93,37 @@ CREATE TABLE auditoria_precios(
     precio_nuevo DECIMAL(10,2),
     fecha_cambio DATE
 );
+
+-- ============================================================
+
+-- Relaciones entre las tablas
+
+-- Un pedido pertenece a un cliente.
+ALTER TABLE pedidos
+ADD CONSTRAINT fk_pedido_cliente
+FOREIGN KEY (id_cliente)
+REFERENCES clientes(id);
+
+-- Un pedido pertenece a una sede.
+ALTER TABLE pedidos
+ADD CONSTRAINT fk_pedido_sede
+FOREIGN KEY (id_sede)
+REFERENCES sedes(id_sede);
+
+-- Cada detalle pertenece a un pedido.
+ALTER TABLE detalle_pedido
+ADD CONSTRAINT fk_detalle_pedido
+FOREIGN KEY (id_pedido)
+REFERENCES pedidos(id_pedido);
+
+-- Cada detalle hace referencia a un producto.
+ALTER TABLE detalle_pedido
+ADD CONSTRAINT fk_detalle_producto
+FOREIGN KEY (id_producto)
+REFERENCES productos(id_producto);
+
+-- La auditoría pertenece a un producto.
+ALTER TABLE auditoria_precios
+ADD CONSTRAINT fk_auditoria_producto
+FOREIGN KEY (id_producto)
+REFERENCES productos(id_producto);
