@@ -82,3 +82,14 @@ CREATE TABLE detalle_pedido(
     subtotal DECIMAL(10,2) NOT NULL,
     PRIMARY KEY(id_pedido, id_producto)
 );
+
+-- ============================================================
+
+-- Tabla: auditoria_precios
+CREATE TABLE auditoria_precios(
+    id_auditoria INT AUTO_INCREMENT PRIMARY KEY,
+    id_producto INT,
+    precio_anterior DECIMAL(10,2),
+    precio_nuevo DECIMAL(10,2),
+    fecha_cambio DATE
+);
