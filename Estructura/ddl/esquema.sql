@@ -48,3 +48,14 @@ CREATE TABLE clientes(
     telefono VARCHAR(15) NOT NULL,
     correo VARCHAR(100)
 );
+
+-- ============================================================
+
+-- Tabla: sedes
+CREATE TABLE sedes(
+    id_sede INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    ubicacion VARCHAR(100) NOT NULL,
+    capacidad INT NOT NULL,
+    encargado VARCHAR(100) NOT NULL
+);
