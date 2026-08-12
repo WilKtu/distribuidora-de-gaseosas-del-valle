@@ -69,3 +69,37 @@ VALUES ('Cola Clásica', 'Gaseosa', 2500.00, 500, 220, 40),
        ('Gaseosa de Manzana y Menta', 'Gaseosa', 3400.00, 500, 100, 15),
        ('Gaseosa de Naranja y Canela', 'Gaseosa', 3500.00, 500, 90, 10);
 
+-- ============================================================
+
+-- 2. TABLA: clientes
+INSERT INTO clientes (nombre, identificacion, direccion, telefono, correo)
+VALUES ('Supermercado La Esquina', '900100201-1', 'Calle 10 # 5-20', '6012345001', 'contacto@laesquina.com'),
+    ('Minimarket El Valle', '900100202-2', 'Carrera 15 # 8-35', '6012345002', 'pedidos@minivalle.com'),
+    ('Tienda Doña Rosa', '900100203-3', 'Avenida 3 # 12-45', '6012345003', 'tiendarosa@correo.com'),
+    ('Almacén Central', '900100204-4', 'Calle 25 # 14-10', '6012345004', 'almacencentral@correo.com'),
+    ('Distribuciones Sol', '900100205-5', 'Carrera 7 # 3-88', '6012345005', 'sol@distri.com'),
+    ('Cafetería La Plaza', '900100206-6', 'Plaza Principal Local 4', '6012345006', 'cafeplaza@correo.com'),
+    ('Restaurante Sabor Latino', '900100207-7', 'Calle 13 # 9-27', '6012345007', 'saborlatino@correo.com'),
+    ('Panadería El Trigal', '900100208-8', 'Carrera 20 # 10-15', '6012345008', 'trigal@correo.com'),
+    ('Heladería Frío Sur', '900100209-9', 'Calle 5 # 22-60', '6012345009', 'frioursur@correo.com'),
+    ('Comidas Rápidas El Parque', '900100210-0', 'Parque Central Local 2', '6012345010', 'elparque@correo.com'),
+    ('Supermercado San Jorge', '900100211-1', 'Calle 45 # 23-11', '6012345011', 'sanjorge@correo.com'),
+    ('Minimarket Los Pinos', '900100212-2', 'Carrera 5 # 18-42', '6012345012', 'pinos@correo.com'),
+    ('Tienda El Trébol', '900100213-3', 'Calle 8 # 6-02', '6012345013', 'trebol@correo.com'),
+    ('Almacén La Cosecha', '900100214-4', 'Carrera 12 # 21-30', '6012345014', 'cosecha@correo.com'),
+    ('Distribuciones Río Azul', '900100215-5', 'Vía Alterna Km 2', '6012345015', 'rioazul@correo.com'),
+    ('Cafetería Aroma', '900100216-6', 'Calle 30 # 11-25', '6012345016', 'aroma@correo.com'),
+    ('Restaurante La Huerta', '900100217-7', 'Carrera 9 # 14-52', '6012345017', 'huerta@correo.com'),
+    ('Panadería Dulce Vida', '900100218-8', 'Calle 17 # 4-19', '6012345018', 'dulcevida@correo.com'),
+    ('Heladería Nieve Norte', '900100219-9', 'Carrera 30 # 5-70', '6012345019', 'nievenorte@correo.com'),
+    ('Comidas Rápidas La 10', '900100220-0', 'Calle 10 # 15-34', '6012345020', 'la10@correo.com'),
+    ('Supermercado Monteverde', '900100221-1', 'Carrera 1 # 33-09', '6012345021', 'monteverde@correo.com'),
+    ('Minimarket Amanecer', '900100222-2', 'Calle 3 # 28-41', '6012345022', 'amanecer@correo.com'),
+    ('Tienda La Amistad', '900100223-3', 'Carrera 25 # 7-18', '6012345023', 'amistad@correo.com'),
+    ('Almacén El Progreso', '900100224-4', 'Calle 50 # 30-12', '6012345024', 'progreso@correo.com'),
+    ('Distribuciones Luna', '900100225-5', 'Carrera 18 # 2-55', '6012345025', 'luna@distri.com'),
+    ('Cafetería Grano de Oro', '900100226-6', 'Calle 22 # 13-08', '6012345026', 'granodeoro@correo.com'),
+    ('Restaurante El Fogón', '900100227-7', 'Carrera 11 # 19-23', '6012345027', 'fogon@correo.com'),
+    ('Panadería San Martín', '900100228-8', 'Calle 9 # 16-47', '6012345028', 'sanmartin@correo.com'),
+    ('Heladería Dulce Frío', '900100229-9', 'Carrera 4 # 24-36', '6012345029', 'dulcefrio@correo.com'),
+    ('Comidas Rápidas Express', '900100230-0', 'Terminal Local 7', '6012345030', 'express@correo.com');
