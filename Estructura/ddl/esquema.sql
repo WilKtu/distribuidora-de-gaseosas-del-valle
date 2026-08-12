@@ -16,3 +16,10 @@ TO 'desarrollador'@'localhost';
 
 -- Aplicar los cambios
 FLUSH PRIVILEGES;
+
+-- ============================================================
+
+-- Crear la base de datos
+CREATE DATABASE IF NOT EXISTS gaseosas_del_valle;
+
+USE gaseosas_del_valle;
