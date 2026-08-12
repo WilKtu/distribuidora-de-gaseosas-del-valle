@@ -59,3 +59,15 @@ CREATE TABLE sedes(
     capacidad INT NOT NULL,
     encargado VARCHAR(100) NOT NULL
 );
+
+-- ============================================================
+
+-- Tabla: pedidos
+CREATE TABLE pedidos(
+    id_pedido INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_pedido DATE NOT NULL,
+    id_cliente INT,
+    id_sede INT,
+    total_sin_iva DECIMAL(10,2),
+    total_con_iva DECIMAL(10,2)
+);
