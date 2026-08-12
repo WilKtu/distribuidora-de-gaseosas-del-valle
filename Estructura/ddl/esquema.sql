@@ -71,3 +71,14 @@ CREATE TABLE pedidos(
     total_sin_iva DECIMAL(10,2),
     total_con_iva DECIMAL(10,2)
 );
+
+-- ============================================================
+
+-- Tabla: detalle_pedido
+CREATE TABLE detalle_pedido(
+    id_pedido INT,
+    id_producto INT,
+    cantidad INT NOT NULL,
+    subtotal DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY(id_pedido, id_producto)
+);
