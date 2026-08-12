@@ -13,3 +13,6 @@ GRANT
     TRIGGER, EVENT
 ON gaseosas_del_valle*
 TO 'desarrollador'@'localhost';
+
+-- Aplicar los cambios
+FLUSH PRIVILEGES;
