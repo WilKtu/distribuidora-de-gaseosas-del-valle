@@ -103,3 +103,24 @@ VALUES ('Supermercado La Esquina', '900100201-1', 'Calle 10 # 5-20', '6012345001
     ('Panadería San Martín', '900100228-8', 'Calle 9 # 16-47', '6012345028', 'sanmartin@correo.com'),
     ('Heladería Dulce Frío', '900100229-9', 'Carrera 4 # 24-36', '6012345029', 'dulcefrio@correo.com'),
     ('Comidas Rápidas Express', '900100230-0', 'Terminal Local 7', '6012345030', 'express@correo.com');
+
+-- ============================================================
+
+-- 3. TABLA: sedes
+INSERT INTO sedes (nombre, ubicacion, capacidad, encargado) 
+VALUES ('Sede Principal Centro', 'Centro', 320, 'Laura Gómez'),
+    ('Sede Norte', 'Norte', 260, 'Carlos Pérez'),
+    ('Sede Sur', 'Sur', 240, 'Ana Torres'),
+    ('Bodega Central', 'Centro', 380, 'Miguel Ángel López'),
+    ('Punto Comercial Rivera', 'Barrio Rivera', 120, 'Sofía Castro'),
+    ('Punto Comercial Jardín', 'Barrio Jardín', 110, 'Andrés Molina'),
+    ('Sede Comercial Oeste', 'Oeste', 190, 'Iván Guzmán'),
+    ('Centro de Distribución Norte', 'Norte Industrial', 350, 'Elena Vargas'),
+    ('Centro de Distribución Sur', 'Sur Industrial', 340, 'Raúl Mendoza'),
+    ('Almacén La Flora', 'La Flora', 160, 'Patricia Núñez'),
+    ('Almacén Los Andes', 'Los Andes', 170, 'Óscar Cárdenas'),
+    ('Kiosco Universidad', 'Ciudad Universitaria', 100, 'Natalia Prieto'),
+    ('Kiosco Hospital', 'Zona Hospitalaria', 70, 'Fabio Arenas'),
+    ('Sede Vacacional Lago', 'Lago', 95, 'Verónica Silva'),
+    ('Punto de Entrega Rápida Norte', 'Norte', 88, 'Emilio Duarte'),
+    ('Bodega Temporada Alta', 'Parque Industrial', 300, 'Adriana Campos');
