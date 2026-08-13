@@ -60,3 +60,12 @@ SELECT nombre
         ORDER BY COUNT(id_pedido) DESC 
         LIMIT 1
 );
+
+-- ======================================================
+
+-- Consulta 8: Consultar pedidos y sus totales agrupados por sede
+SELECT s.nombre AS sede, SUM(p.total_con_iva) AS ingresos_totales
+    FROM sedes s
+    JOIN pedidos p ON s.id_sede = p.id_sede
+    GROUP BY s.nombre
+    ORDER BY ingresos_totales DESC;
