@@ -47,3 +47,16 @@ SELECT nombre, correo
 SELECT nombre, categoria, precio
     FROM productos
     WHERE categoria IN ('Gaseosa', 'Soda', 'Agua');
+
+-- ======================================================
+
+-- Consulta 7: Mostrar el cliente con mayor número de pedidos (subconsulta)
+SELECT nombre 
+    FROM clientes 
+    WHERE id_cliente = (
+        SELECT id_cliente 
+        FROM pedidos 
+        GROUP BY id_cliente 
+        ORDER BY COUNT(id_pedido) DESC 
+        LIMIT 1
+);
