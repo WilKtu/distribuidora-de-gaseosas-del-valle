@@ -3,7 +3,7 @@
 -- VISTA 1: Resumen de pedidos y ventas por sede
 
 
-CREATE OR REPLACE VIEW vista_resumen_pedidos_por_sede AS
+CREATE VIEW vista_resumen_pedidos_por_sede AS
 SELECT 
     s.id_sede,
     s.nombre AS nombre_sede,
@@ -15,3 +15,22 @@ SELECT
 FROM sedes s
 LEFT JOIN pedidos p ON s.id_sede = p.id_sede
 GROUP BY s.id_sede, s.nombre, s.ubicacion, s.encargado;
+
+-- ============================================================
+
+-- VISTA 2: Productos con stock bajo el mínimo
+
+
+CREATE VIEW vista_productos_bajo_stock AS
+SELECT 
+    id_producto,
+    nombre,
+    categoria,
+    precio,
+    volumen_ml,
+    stock_actual,
+    stock_minimo,
+    (stock_minimo - stock_actual) AS unidades_faltantes
+FROM productos
+WHERE stock_actual <= stock_minimo
+ORDER BY unidades_faltantes DESC;
