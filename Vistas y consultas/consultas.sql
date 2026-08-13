@@ -40,3 +40,10 @@ SELECT c.nombre, COUNT(p.id_pedido) AS cantidad_pedidos
 SELECT nombre, correo 
     FROM clientes 
     WHERE nombre LIKE '%Supermercado%';
+
+-- ======================================================
+
+-- Consulta 6: Consultar productos de ciertas categorías usando IN
+SELECT nombre, categoria, precio
+    FROM productos
+    WHERE categoria IN ('Gaseosa', 'Soda', 'Agua');
