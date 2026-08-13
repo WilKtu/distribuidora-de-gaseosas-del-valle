@@ -1,3 +1,8 @@
+-- ============================================================
+
+-- SCRIPT DE INSERCIÓN DE DATOS
+USE gaseosas_del_valle;
+
 -- Evento: Reposición automática de inventario
 
 -- ============================================================
