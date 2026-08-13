@@ -9,3 +9,10 @@ USE gaseosas_del_valle;
 SELECT nombre, stock_actual, stock_minimo 
 FROM productos 
 WHERE stock_actual < stock_minimo;
+
+-- ======================================================
+
+-- Consulta 2: Consultar los pedidos realizados entre dos fechas (BETWEEN)
+SELECT id_pedido, fecha_pedido, total_con_iva 
+FROM pedidos 
+WHERE fecha_pedido BETWEEN '2026-01-01' AND '2026-03-31'; 
