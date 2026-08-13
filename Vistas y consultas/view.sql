@@ -34,3 +34,22 @@ SELECT
 FROM productos
 WHERE stock_actual <= stock_minimo
 ORDER BY unidades_faltantes DESC;
+
+-- ============================================================
+
+-- VISTA 3: Clientes con al menos un pedido registrado
+
+
+CREATE OR REPLACE VIEW vista_clientes_activos AS
+SELECT 
+    c.id_cliente,
+    c.nombre,
+    c.identificacion,
+    c.direccion,
+    c.telefono,
+    c.correo,
+    COUNT(p.id_pedido) AS total_pedidos,
+    SUM(p.total_con_iva) AS total_comprado
+FROM clientes c
+INNER JOIN pedidos p ON c.id_cliente = p.id_cliente
+GROUP BY c.id_cliente, c.nombre, c.identificacion, c.direccion, c.telefono, c.correo;
