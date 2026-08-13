@@ -25,3 +25,11 @@ SELECT p.nombre, SUM(dp.cantidad) AS total_vendido
     JOIN detalle_pedido dp ON p.id_producto = dp.id_producto
     GROUP BY p.nombre
     ORDER BY total_vendido DESC;
+
+-- ======================================================
+
+-- Consulta 4: Mostrar clientes y la cantidad de pedidos realizados
+SELECT c.nombre, COUNT(p.id_pedido) AS cantidad_pedidos
+    FROM clientes c
+    LEFT JOIN pedidos p ON c.id_cliente = p.id_cliente
+    GROUP BY c.id_cliente, c.nombre;
