@@ -18,6 +18,22 @@ END //
 
 DELIMITER ;
 
+-- mostrar actualizar stock
+SELECT stock_actual
+FROM productos
+WHERE id_producto = 1;
+
+--  mostrar detalle de pedido
+INSERT INTO detalle_pedido
+(id_pedido, id_producto, cantidad, subtotal)
+VALUES
+(1, 1, 5, 17.50);
+
+--  mostrar stock actual
+SELECT stock_actual
+FROM productos
+WHERE id_producto = 1;
+
 -- Trigger 2: Registrar cambios de precio
 
 -- ============================================================
@@ -51,3 +67,13 @@ BEGIN
 END //
 
 DELIMITER ;
+
+-- actualizar productos
+UPDATE productos
+SET precio = 4.00
+WHERE id_producto = 1;
+
+-- mostrar auditoria de los productos
+SELECT *
+FROM auditoria_precios
+ORDER BY id_auditoria DESC;
