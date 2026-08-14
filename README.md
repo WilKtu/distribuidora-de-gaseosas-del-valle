@@ -1,4 +1,4 @@
-# 🥤 Sistema de Gestión de Inventarios y Ventas
+# 🥤 Distribuidora de gaseosas el valle
 ## Base de Datos: `gaseosas_del_valle`
 
 > Proyecto desarrollado en MySQL para administrar inventarios, clientes, pedidos, sedes y auditoría de precios de la empresa **Gaseosas del Valle**.
