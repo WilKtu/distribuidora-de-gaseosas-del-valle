@@ -31,8 +31,8 @@ SELECT p.nombre, SUM(dp.cantidad) AS total_vendido
 -- Consulta 4: Mostrar clientes y la cantidad de pedidos realizados
 SELECT c.nombre, COUNT(p.id_pedido) AS cantidad_pedidos
     FROM clientes c
-    LEFT JOIN pedidos p ON c.id_cliente = p.id_cliente
-    GROUP BY c.id_cliente, c.nombre;
+    LEFT JOIN pedidos p ON id_cliente = id_cliente
+    GROUP BY id_cliente, c.nombre;
 
 -- ======================================================
 
@@ -51,15 +51,16 @@ SELECT nombre, categoria, precio
 -- ======================================================
 
 -- Consulta 7: Mostrar el cliente con mayor número de pedidos (subconsulta)
-SELECT nombre 
-    FROM clientes 
-    WHERE id_cliente = (
-        SELECT id_cliente 
-        FROM pedidos 
-        GROUP BY id_cliente 
-        ORDER BY COUNT(id_pedido) DESC 
+SELECT nombre
+    FROM clientes
+    WHERE id = (
+        SELECT id_cliente
+        FROM pedidos
+        GROUP BY id_cliente
+        ORDER BY COUNT(*) DESC
         LIMIT 1
 );
+
 
 -- ======================================================
 
